@@ -28,8 +28,8 @@ class transform_node : public rclcpp::Node {
 		constexpr double tmp_val = 1/1.414213562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641572735013846230912;
 		constexpr double r       = 0.38;
 		
-		converter << -tmp_val,  tmp_val,-r,
-					  tmp_val,  tmp_val,-r,
+		converter <<  tmp_val, -tmp_val, r,
+					 -tmp_val, -tmp_val, r,
 					 -tmp_val,  tmp_val, r,
 					  tmp_val,  tmp_val, r;
 					
